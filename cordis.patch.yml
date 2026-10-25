@@ -1,0 +1,20 @@
+# @local/dsh-mail bundle patch.
+#
+# 一行 insert 挂载 Host 半身。配置留空即可，全部字段都有默认值；
+# 要接入真实邮箱就填 account / smtpHost / imapHost 三项（不设默认值，
+# 免得插件拿一个猜测的服务器去连），保存后 HMR 立刻生效。
+#
+# 自建 / 企业邮箱的典型写法：
+#   config:
+#     account: agent@mail.example.com
+#     smtpHost: mail.example.com
+#     smtpPort: 465          # 587 则配 smtpSecure: false
+#     imapHost: mail.example.com
+#     imapPort: 993          # 143 则配 imapSecure: false
+#     passwordEnv: DSH_MAIL_PASSWORD
+#     allowRecipients: []    # 例：['@example.com'] 只允许发给本公司域名
+#     askBeforeSend: true
+- insert:
+    - id: mail
+      name: '@local/dsh-mail'
+      config: {}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Mailbox (IMAP + SMTP)",
+    "description": "Wires a real mailbox into the agent over IMAP and SMTP: list, search, read bodies, save attachments into the workspace, and send mail with a recipient allowlist and per-send approval."
+  }
+}

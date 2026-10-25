@@ -1,0 +1,61 @@
+{
+  "name": "@local/dsh-mail",
+  "version": "1.0.0",
+  "description": "DSH 邮箱插件，只有邮件功能：通过 IMAP 列信、搜索、读正文、把附件取进工作区，通过 SMTP 发信，带收件人白名单与逐次发信批准。不含日历。",
+  "license": "MIT",
+  "author": {
+    "name": "Lynra",
+    "url": "https://github.com/ruanmei114514"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruanmei114514/dsh-mail-plugin.git"
+  },
+  "homepage": "https://github.com/ruanmei114514/dsh-mail-plugin#readme",
+  "bugs": {
+    "url": "https://github.com/ruanmei114514/dsh-mail-plugin/issues"
+  },
+  "keywords": [
+    "dsh",
+    "cordis",
+    "plugin",
+    "mail",
+    "imap",
+    "smtp"
+  ],
+  "private": true,
+  "type": "module",
+  "main": "./index.js",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "src/mailbox.js",
+    "locale/*.json",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "dependencies": {
+    "imapflow": "^2.9.1",
+    "mailparser": "^3.12.4",
+    "nodemailer": "^10.2.1"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.2",
+    "@deepseek-ai/dsh-credentials": "^0.2.0-rc.1",
+    "@deepseek-ai/dsh-system-prompt": "^0.2.0-rc.1",
+    "@deepseek-ai/dsh-tools": "^0.2.0-rc.1",
+    "@deepseek-ai/schemastery": "^3.18.4"
+  }
+}

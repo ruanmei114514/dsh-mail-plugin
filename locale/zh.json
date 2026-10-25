@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "邮箱接入（IMAP + SMTP）",
+    "description": "用 IMAP 和 SMTP 把真实邮箱接给 agent：列信、搜索、读正文、把附件存进工作区、发信，并带收件人白名单与逐次发信批准。"
+  }
+}
