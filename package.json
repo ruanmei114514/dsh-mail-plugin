@@ -1,7 +1,7 @@
 {
   "name": "@local/dsh-mail",
   "version": "1.0.0",
-  "description": "DSH 邮箱插件，只有邮件功能：通过 IMAP 列信、搜索、读正文、把附件取进工作区，通过 SMTP 发信，带收件人白名单与逐次发信批准。不含日历。",
+  "description": "DSH 邮箱插件：通过 IMAP 列信、搜索、读正文、把附件取进工作区，通过 SMTP 发信，带收件人白名单与逐次发信批准。",
   "license": "MIT",
   "author": {
     "name": "Lynra",

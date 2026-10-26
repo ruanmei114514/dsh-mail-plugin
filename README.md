@@ -3,9 +3,6 @@
 给 DSH 的 agent 接上真实邮箱：列信、搜索、读正文、把附件存进工作区、发信。
 协议交给久经考验的库——`imapflow`、`nodemailer`、`mailparser`，没有手写报文。
 
-这一版**只有邮件，没有日历**。带 CalDAV 日历的上一版完整快照存在外接盘
-`邮箱插件-dsh-mail/` 目录里（含 `node_modules`，插上即可用），详见那里的 `BACKUP-INFO.txt`。
-
 ## 当前状态
 
 仓库里不含任何真实凭据：包内 `cordis.patch.yml` 的 `config` 是空的 `{}`，只是个带注释的挂载模板；
@@ -124,8 +121,7 @@ Config 默认值与边界、两个开关、收件人格式与白名单各种写�
 profile 以 `link:` 指向本目录安装，**别移动或删除这个目录**；换位置要重新
 `install_bundle`。`node_modules` 已随目录存在，不需要再 `npm install`。
 
-依赖只剩三个：`imapflow`、`mailparser`、`nodemailer`。日历层去掉后
-`fast-xml-parser` 已 prune 掉。
+依赖只有三个：`imapflow`、`mailparser`、`nodemailer`。
 
 ## 许可证
 
